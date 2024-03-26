@@ -1,0 +1,32 @@
+.success {
+    background: #07bc0c;
+}
+
+.warning {
+    background: #f1c40f;
+}   
+
+.info {
+    background: #3498db;
+}
+
+.error {
+    background: #e74c3c;
+}
+
+.default {
+    background: hsla(0,0%,100%,.7);
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+
+    svg {
+        margin-right: 7px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,58 @@
+.main {
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 20px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title title title"
+    "calendar calendar calendar"
+    "reports reports report"
+    "request requests requests";
+}
+
+.title {
+  grid-area: title;
+}
+
+.reports {
+  grid-area: reports;
+}
+
+.add {
+  display: flex;
+  flex-wrap: wrap;
+
+h4 {
+  align-self: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
+
+.addReport {
+  grid-area: report;
+}
+
+.addRequest {
+  grid-area: request;
+}
+
+.reports,
+.add,
+.requests {
+  padding: 20px;
+  max-height: 316px;
+  height: 100%;
+}
+
+.requests {
+  margin-top: 0;
+  width: 100%;
+  grid-area: requests;
+}
+
+.calendar {
+  grid-area: calendar;
+  padding: 20px;
+}

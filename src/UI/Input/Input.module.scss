@@ -1,0 +1,99 @@
+.inputField {
+    position: relative;
+
+    input {
+        &[type='text'],
+        &[type='number'],
+        &[type='password'] {
+            outline: none;
+            border-bottom: 1px solid black;
+            background: transparent;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+    
+            &:active, &:focus, &:active {
+                border-bottom: 1px solid blue;
+                outline: none;
+                width: 100%;
+    
+                + .placeholder {
+                    top: -50%;
+                    left: 0;
+                    font-size: 12px;
+                }
+            }
+    
+            
+        }
+
+        &[type='checkbox'],
+        &[type='radio'] {
+            margin: 7px 14px 7px 3px;
+        }
+    }
+
+    .notEmpty +.placeholder {
+        top: -50%;
+        left: 0;
+        font-size: 12px;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+
+.field {
+    margin-bottom: 30px;
+}
+
+.error {
+    color: rgb(158, 4, 4);
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.radio,
+.checkbox,
+.date {
+    label {
+        color: #555555;
+    }
+}
+
+.text {
+    .placeholder {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #555555;
+        transition: all 0.3s ease;
+        z-index: 0;
+    }
+}
+
+
+.title {
+    color: #555555;
+}
+
+
+.date {
+    label {
+        display: block;
+    }
+
+    input {
+        border-bottom: 1px solid black;
+        outline: none;
+
+        &:focus,&:active,&:hover {
+            outline: none;
+            border-bottom: 1px solid black;
+        }
+    }
+}

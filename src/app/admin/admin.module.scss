@@ -1,0 +1,16 @@
+.mainWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.content {
+    width: 100%;
+}

@@ -1,0 +1,11 @@
+.list {
+    z-index: 22;
+    position: absolute;
+    top: 25px;
+    background: #ebebeb;
+    width: 100%;
+     li {
+        padding: 5px 10px;
+        cursor: pointer;
+     }
+}

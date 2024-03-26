@@ -1,0 +1,21 @@
+.title {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    position: relative;
+    padding-left: 25px;
+    
+    svg {
+        &:first-of-type {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &:hover,
+    &.active {
+        color: var(--sidebar-text-color-active);
+    }
+}

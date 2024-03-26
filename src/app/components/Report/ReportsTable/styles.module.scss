@@ -1,0 +1,12 @@
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a, svg {
+        font-size: 25px;
+        line-height: 1;
+        display: inline;
+        margin-left: 15px;
+    }
+}

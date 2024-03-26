@@ -1,0 +1,32 @@
+.search {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.tableRow {
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a, svg {
+        font-size: 25px;
+        line-height: 1;
+        display: inline;
+        margin-left: 15px;
+    }
+}
+
+.AddEmployee {
+    display: flex;
+    align-items: center;
+    
+    svg {
+        font-size: 22px;
+    }
+}

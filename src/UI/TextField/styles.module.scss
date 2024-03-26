@@ -1,0 +1,11 @@
+.field {
+    margin-bottom: 20px;
+    position: relative;
+    
+    p {
+        &:first-of-type {
+            color: #555555;
+            font-size: 12px;
+        }
+    }
+}

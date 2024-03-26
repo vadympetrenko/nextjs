@@ -1,0 +1,36 @@
+.header {
+    background: white;
+    width: 100%;
+    min-height: 60px;
+    color: black;
+    box-shadow: rgba(50,50,93,.02) 0 2px 5px -1px, rgba(0,0,0,.05) 0 1px 3px -1px;
+    padding: 15px;
+}
+
+.logout {
+    text-align: right;
+    float: right;
+}
+
+.requests {
+    position: relative;
+
+    svg {
+        font-size: 20px;
+    }
+
+    span {
+        position: absolute;
+        background: var(--danger);
+        color: #fff;
+        font-size: 11px;
+        width: 16px;
+        height: 16px;
+        right: 18px;
+        bottom: 4px;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

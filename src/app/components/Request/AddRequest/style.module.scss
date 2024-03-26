@@ -1,0 +1,17 @@
+.calendar {
+    margin-bottom: 20px;
+}
+
+.calendarError {
+    color: rgb(158, 4, 4);
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.calendar {
+    [class*=react-datepicker__day--highlighted] {
+        background: #3dcc4a;
+        color: white;
+    }
+}

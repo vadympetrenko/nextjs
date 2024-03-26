@@ -1,0 +1,37 @@
+.calendar {
+    margin-bottom: 20px;
+    [class*=react-datepicker-popper] {
+        position: initial!important;
+        transform: initial!important;
+    }
+
+    [class*=react-datepicker__triangle] {
+        display: none;
+    }
+
+    [class*=react-datepicker-wrapper] {
+        display: none;
+    }
+ 
+    [class*=react-datepicker__day--keyboard-selected ] {
+        background-color: transparent !important;
+    }
+
+    div[class*=react-datepicker__day--highlighted ] { 
+        background-color: #3dcc4a  !important;
+    }
+}
+
+.status {
+    p:last-of-type {
+        text-transform: uppercase;
+    }
+}
+
+.declined {
+    color: var(--danger)
+}
+
+.approved {
+    color: var(--success)
+}

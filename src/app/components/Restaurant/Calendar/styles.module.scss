@@ -1,0 +1,66 @@
+.calendarWrapper {
+    height: 800px;
+    max-width: 1000px;
+    width: 100%;
+
+    &[class*=full-width] {
+        max-width: 100%;
+    }
+
+    [class*=custom-select] {
+        z-index: 2;
+    }
+
+    + div {
+        max-width: 250px;
+    }
+}
+
+.eventModal {
+    min-height: 300px;
+    overflow: visible;
+
+    [class*=react-datepicker__time-list-item--disabled] {
+        display: none;
+    }
+}
+
+.removeEvent {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    z-index: 0;
+    font-size: 20px;
+}
+
+.emptyEmployee {
+    background: var(--danger);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.emptyEvent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 20px);
+}
+
+.employeesList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: grab;
+    width: 100%;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 16px;
+}

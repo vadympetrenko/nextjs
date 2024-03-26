@@ -1,0 +1,46 @@
+.title {
+    margin-bottom: 20px;
+}
+
+.form {
+    input {
+        width: 40%;
+    }
+
+    > div {
+        width: 40%;
+    }
+}
+
+div.total {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+
+    > div {
+        width: 40%;
+    }
+}
+
+.minus {
+    input {
+        padding-left: 25px;
+    }
+
+    &::before {
+        content: "−";
+        font-size: 30px;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    [class*=placeholder] {
+        left: 25px;
+    }
+}
+
+.sendReport {
+    margin: 20px auto 40px
+}

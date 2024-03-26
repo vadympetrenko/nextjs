@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background-hex: #fdfdfd;
+  --text-color: #000;
+  --background-color: #f0f4f7;
+  --sidebar-background-color: #323e53;
+  --sidebar-text-color-active: rgba(255, 255, 255, 0.87);
+  --sidebar-text-color: rgb(255 255 255 / 60%);
+
+  --button-primary-color: #000015;
+  --button-primary-background: #39f;
+  --button-primary-hover-color: #000015;
+  --button-primary-hover-background: #52a8ff;
+
+  --button-secondary-color:  rgba(44, 56, 74, 0.95);
+  --button-secondary-hover-color:  rgba(44, 56, 74, 0.95);
+  --button-secondary-background: #ebedef;
+  --button-secondary-hover-background: #c8c9cb;;
+
+  --button-tertiary-color:  #fff;
+  --button-tertiary-hover-color:   #fff;
+  --button-tertiary-background: #ee658d;
+  --button-tertiary-hover-background: #ee376e;;
+
+  --danger: #ef376e;
+  --success: rgb(81, 204, 138);
+}
+
+body {
+  color: var( --text-color);
+  background: var(--background-color);
+  display: flex;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+.main-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.required::after {
+ content: '*';
+ display: inline;
+ color: var(--danger);
+margin-left: 5px;
+}
+
+table {
+  width: 100%;
+  background: #f0f4f7;
+  border-radius: 10px;
+}
+
+table tr {
+  transition: all 0.3s ease;
+}
+
+table tr:hover {
+  background-color: #fff;
+}
+
+table thead tr:hover {
+  background: #e4e7e9;
+}
+
+table td,
+table th {
+  padding: 5px 10px;
+}
+
+table td:last-of-type, table th:last-of-type {
+  text-align: right;
+}
+
+table th {
+  text-align: left;
+}
+
+
+.modal {
+  position: relative;
+  background-color: #fff;
+  width: 500px;
+  height: 200px;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 15px 160px;
+}
+
+.modal .footer {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(243, 244, 246);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 10px 1.5rem;
+  flex-direction: row-reverse;
+}
+
+.modal-wrapper {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(107, 114, 128, 0.5);
+  z-index: 9;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.modal .body {
+  padding: 20px;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+select {
+  outline: none;
+  border: none;
+}
+
+select:focust,
+select:hover {
+  outline: none;
+  border: none
+}
+
+.pagination  {
+  margin-top: 20px;
+}
+.pagination li[title] {
+  background: var(--button-secondary-background);
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 0 3px;
+  min-width: 20px;
+  cursor: pointer;
+}
+
+.pagination li[title][class*=active] {
+  background: var(--button-primary-background);
+}
+
+.pagination li[class*=pagination-prev],
+.pagination li[class*=pagination-next] { 
+  display: none;
+}
+
+.pagination li[class*=jump-next] {
+  content: '...'
+}
+
+.pagination .rc-pagination-total-text {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.rc-pagination-jump-next button:after,
+.rc-pagination-jump-prev button:after {
+  display: block;
+  content: '...';
+}

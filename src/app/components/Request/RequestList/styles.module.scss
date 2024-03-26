@@ -1,0 +1,30 @@
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a, svg {
+        font-size: 25px;
+        line-height: 1;
+        display: inline;
+        margin-left: 15px;
+    }
+}
+
+.status {
+        text-transform: uppercase;
+}
+
+
+.declined {
+    color: var(--danger)
+}
+
+.approved {
+    color: var(--success)
+}
+
+.unread {
+    font-weight: bold;
+    background: #e4e7e9;
+}
